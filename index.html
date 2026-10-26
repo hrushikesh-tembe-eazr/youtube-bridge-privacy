@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YouTube Bridge: Privacy Policy</title>
+<meta name="description" content="Privacy policy and terms for YouTube Bridge, a private single-user tool for the channel @hrushitembe6550.">
+<style>
+  :root { --bg: #ffffff; --fg: #1b1f24; --muted: #57606a; --line: #d8dee4; --accent: #0b57d0; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0f1419; --fg: #e6edf3; --muted: #9da7b1; --line: #30363d; --accent: #7cacf8; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 16px 80px; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 6px; }
+  h2 { font-size: 1.2rem; margin: 40px 0 8px; padding-top: 20px; border-top: 1px solid var(--line); }
+  p, li { margin: 0 0 12px; }
+  ul { padding-left: 22px; }
+  .meta { color: var(--muted); margin-bottom: 28px; }
+  a { color: var(--accent); }
+  code { font-size: .92em; background: color-mix(in srgb, var(--line) 45%, transparent); padding: 1px 5px; border-radius: 4px; }
+  table { width: 100%; border-collapse: collapse; margin: 8px 0 16px; font-size: .95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; }
+  .summary { border: 1px solid var(--line); border-radius: 10px; padding: 16px 20px; }
+  .summary li { margin-bottom: 6px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>YouTube Bridge: Privacy Policy</h1>
+  <p class="meta">Last updated: 26 October 2026</p>
+
+  <div class="summary">
+    <p><strong>In short:</strong></p>
+    <ul>
+      <li>YouTube Bridge is a private tool used by one person (the owner of the YouTube channel
+        <a href="https://www.youtube.com/@hrushitembe6550">@hrushitembe6550</a>) to manage that channel only.</li>
+      <li>It uses YouTube API Services. It reads that channel's own data and uploads that channel's own videos.</li>
+      <li>Data is kept on the owner's computer. It is not sold, shared or used for advertising.</li>
+      <li>Access can be revoked at any time at
+        <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    </ul>
+  </div>
+
+  <h2>1. What YouTube Bridge is</h2>
+  <p>YouTube Bridge ("the app") is a set of scripts that the channel owner runs on their own computer.
+    It is not a public service: there are no accounts, no sign-ups and no other users. The only
+    Google account that signs in to it is the account that owns the channel above.</p>
+
+  <h2>2. YouTube API Services</h2>
+  <p>The app uses YouTube API Services. By using it you agree to be bound by the
+    <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's handling of data is
+    described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+  <h2>3. What data the app accesses</h2>
+  <table>
+    <tr><th>Data</th><th>Permission</th><th>Why</th></tr>
+    <tr><td>Channel name, subscriber/view/video counts, list of uploaded videos with their titles, descriptions, tags and statistics</td>
+        <td>youtube.readonly</td><td>To review the channel's own videos and plan new ones</td></tr>
+    <tr><td>Analytics for the channel's own videos: views, watch time, audience retention</td>
+        <td>yt-analytics.readonly</td><td>To see where viewers stop watching and improve future videos</td></tr>
+    <tr><td>Comments on the channel's own videos, including the commenter's public display name and comment text</td>
+        <td>youtube.readonly</td><td>To read and answer viewer questions. The app never posts replies; the owner does that on YouTube.</td></tr>
+    <tr><td>Uploading the owner's own videos and thumbnails</td>
+        <td>youtube.upload</td><td>To upload videos the owner produced. Uploads are always set to private; the owner publishes them manually in YouTube Studio.</td></tr>
+  </table>
+  <p>The app does not access any other channel's private data. It cannot delete or edit existing
+    videos, and it does not post comments.</p>
+
+  <h2>4. How data is used and stored</h2>
+  <ul>
+    <li><strong>On the owner's computer.</strong> Data the app fetches is shown to the owner and, where
+      useful, saved in local files on their computer. Google sign-in tokens are stored locally in files
+      readable only by the owner's computer account.</li>
+    <li><strong>AI assistance.</strong> When the owner asks for help (for example, drafting replies or
+      reviewing performance), the relevant data is sent to Anthropic's Claude AI service to produce
+      that answer, on the owner's request only. See
+      <a href="https://www.anthropic.com/legal/privacy">Anthropic's Privacy Policy</a>.</li>
+    <li><strong>Not sold or shared.</strong> No data is sold, rented, shared with advertisers or data
+      brokers, or used to build profiles of viewers.</li>
+    <li><strong>No cookies or tracking.</strong> The app has no website analytics, cookies or trackers.
+      This page has none either.</li>
+  </ul>
+
+  <h2>5. Retention and deletion</h2>
+  <p>Local files remain until the owner deletes them. Stored data that the app no longer needs is
+    deleted, and in any case data obtained from YouTube API Services is refreshed or deleted within
+    30 days, as YouTube's developer policies require. Sign-in tokens can be deleted at any time by
+    running the app's <code>logout</code> command or removing the token files.</p>
+
+  <h2>6. Revoking access</h2>
+  <p>Access can be revoked at any time through Google's security settings:
+    <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>.
+    Once access is revoked, the app can no longer read or upload anything.</p>
+
+  <h2>7. Children</h2>
+  <p>The app is not directed at children and does not knowingly collect data from children.</p>
+
+  <h2>8. Changes</h2>
+  <p>If this policy changes, the "Last updated" date above will change. Material changes will be
+    reflected here before they take effect.</p>
+
+  <h2>9. Terms of use</h2>
+  <p>YouTube Bridge is provided for the channel owner's personal use, as is, without warranty. Using
+    it is subject to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the
+    <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">YouTube API
+    Services Terms of Service</a>.</p>
+
+  <h2>10. Contact</h2>
+  <p>Questions about this policy: <a href="mailto:hrushitembe1998@gmail.com">hrushitembe1998@gmail.com</a></p>
+</main>
+</body>
+</html>
